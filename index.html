@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/9533/9533813.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <h1>Exerciese</h1>
+        <a href="#"><button>Source Code 👩‍💻</button></a>
+    </nav>
+    <div id="container"></div>
+    <div class="footer">
+        <a href="index.html">
+            <p>Inspired by Professor SAM ART</p>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        let person = document.getElementById('container')
+        for(let i = 0; i < data.length; i++) {
+            person.innerHTML += `
+            <div class="card">
+                <div class="profile">
+                    <img src="${data[i].picture}" alt="image" width="120px">
+                </div>
+
+                <div class="info">
+                    <div class="personinfo">
+                        <h1><span>${data[i].title}</span> ${data[i].first} ${data[i].last}</h1>
+                        <h2><span>Gender:</span> ${data[i].gender}</h2>
+                        <h2><span>Country:</span> ${data[i].country}</h2>
+                        <h2><span>Email:</span> ${data[i].email}</h2>
+                        <h2><span>Username:</span> ${data[i].username}</h2>
+                        <h2><span>Phone:</span> 0${data[i].phone}</h2>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="hi()">Contact</button>
+                    </div>
+                    
+                </div>
+                
+            </div> `
+        }
+
+        function hi() {
+            alert("Hello World 😊")
+        }
+    </script>
+</body>
+</html>

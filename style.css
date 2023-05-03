@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 11px;
+}
+
+nav {
+    background-color: #181818;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav h1 {
+    font-size: 25px;
+}
+
+nav a button {
+    border: none;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+nav a button:hover {
+    opacity: 0.8;
+}
+
+#container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 0 5px #00000077;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.profile img{
+    border-radius: 50%;
+}
+
+.info{
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+
+.personinfo h1{
+    margin: 10px 0;
+}
+.personinfo h1 span {
+    color: #444444;
+}
+.personinfo h2 {
+    font-weight: 300;
+}
+.personinfo h2 span{
+    color: #444444;
+    font-weight: bold;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #131313;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.btn button:hover {
+    background-color: #131313c9;
+}
+
+.footer{
+    background-color: #131313;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
